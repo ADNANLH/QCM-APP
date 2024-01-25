@@ -11,4 +11,10 @@ class ExamensController extends Controller
     {
         return view('examens.index');
     }
+
+    public function add()
+    {
+        return view('examens.add');
+    }
+    
 }

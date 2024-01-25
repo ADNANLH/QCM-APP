@@ -9,7 +9,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="float-sm-right">
-                            <a href="#" class="btn btn-info">
+                            <a href="{{route('examens.add')}}" class="btn btn-info">
                                 <i class="fas fa-plus"></i> Nouveau Examen
                             </a>
                         </div>
@@ -60,13 +60,13 @@
                                             <td>20-03-2024</td>
                                             <td>28-03-2024</td>
                                             <td>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Afficher'>
                                                     <i class="far fa-eye"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Modifier'>
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-danger btn-sm '>
+                                                <a href="#" class='btn btn-danger btn-sm ' title='Supprimer'>
                                                     <i class="fa-regular fa-trash-can"></i>
                                                 </a>
                                             </td>
@@ -78,13 +78,13 @@
                                             <td>20-03-2024</td>
                                             <td>28-03-2024</td>
                                             <td>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Afficher'>
                                                     <i class="far fa-eye"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Modifier'>
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-danger btn-sm '>
+                                                <a href="#" class='btn btn-danger btn-sm ' title='Supprimer'>
                                                     <i class="fa-regular fa-trash-can"></i>
                                                 </a>
                                             </td>
@@ -96,13 +96,13 @@
                                             <td>20-03-2024</td>
                                             <td>28-03-2024</td>
                                             <td>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Afficher'>
                                                     <i class="far fa-eye"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Modifier'>
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-danger btn-sm '>
+                                                <a href="#" class='btn btn-danger btn-sm ' title='Supprimer'>
                                                     <i class="fa-regular fa-trash-can"></i>
                                                 </a>
                                             </td>
@@ -114,13 +114,13 @@
                                             <td>20-03-2024</td>
                                             <td>28-03-2024</td>
                                             <td>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Afficher'>
                                                     <i class="far fa-eye"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Modifier'>
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-danger btn-sm '>
+                                                <a href="#" class='btn btn-danger btn-sm ' title='Supprimer'>
                                                     <i class="fa-regular fa-trash-can"></i>
                                                 </a>
                                             </td>
@@ -132,13 +132,13 @@
                                             <td>20-03-2024</td>
                                             <td>28-03-2024</td>
                                             <td>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Afficher'>
                                                     <i class="far fa-eye"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Modifier'>
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-danger btn-sm '>
+                                                <a href="#" class='btn btn-danger btn-sm ' title='Supprimer'>
                                                     <i class="fa-regular fa-trash-can"></i>
                                                 </a>
                                             </td>
@@ -150,13 +150,13 @@
                                             <td>20-03-2024</td>
                                             <td>28-03-2024</td>
                                             <td>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Afficher'>
                                                     <i class="far fa-eye"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-default btn-sm'>
+                                                <a href="#" class='btn btn-default btn-sm' title='Modifier'>
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-danger btn-sm '>
+                                                <a href="#" class='btn btn-danger btn-sm ' title='Supprimer'>
                                                     <i class="fa-regular fa-trash-can"></i>
                                                 </a>
                                             </td>
@@ -165,6 +165,16 @@
                                     {{-- <input type="hidden" id='page' value="1"> --}}
                                 </table>
                             </div>
+                            <div class="card-footer clearfix">
+                                <ul class="pagination pagination-sm m-0 float-right">
+                                <li class="page-item"><a class="page-link" href="#">«</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">»</a></li>
+                                </ul>
+                                </div>
+                        
                         </div>
                     </div>
                 </div>
