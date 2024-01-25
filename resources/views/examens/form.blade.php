@@ -1,41 +1,51 @@
-<form method="POST" class="container pt-2" action="">
+<form method="post" class="container pt-2" action="">
     @csrf
-    @if (isset($task))
-        @method('PUT')
-    @endif
 
     <div class="card-body">
-        <div class="form-group">
-            <label for="nom" class="form-label">Projet</label>
-           
-            @error('projetId')
-                <div class="invalid-feedback text-danger">{{ $message }}</div>
-            @enderror
-        </div>
-        
-
         <div class="form-group mb-3">
-            <label for="nom">Name</label>
-            <input name="nom" type="text" class="form-control" id="nom" placeholder="Enter name"
-                value="{{ old('name', isset($task) ? $task->nom : '') }}">
-            @error('name')
-                <div class="text-danger">{{ $message }}</div>
-            @enderror
+            <label for="nom" class="form-label">Examen</label>
+            <input name="examen" type="text" class="form-control" id="examen" placeholder="Entrer le titre d'examen">
+
         </div>
 
         <div class="form-group mb-3">
             <label for="Description">Description</label>
-            <textarea name="description" id="inputDescription" class="form-control" oninput="setCustomValidity('')">{{ old('description', isset($task) ? $task->description : '') }}</textarea>
-            @error('description')
-                <div class="text-danger">{{ $message }}</div>
-            @enderror
+            <input name="description" id="description" class="form-control" placeholder="Entrer une description">
+        </div>
+        <div id="dynamic-inputs-container">
+
+        </div>
+        <div class="form-group mb-3">
+            <button onclick="addCard('multi-choix')">Add Multi Choix</button>
+            <button onclick="addCard('libre-question')">Add Libre Question</button>
         </div>
 
         {{-- <input name="project_id" type="hidden" class="form-control" value="{{ $project->id }}"> --}}
     </div>
     <div class="card-footer">
         {{-- {{ route('tasks.index', $project->id) }} --}}
-        <a href="" class="btn btn-default">Cancel</a>
-        <button type="submit" class="btn btn-primary mx-2">{{ isset($examen) ? 'Modifier' : 'Ajouter' }}</button>
+        <a href="" class="btn btn-default">Annuler</a>
+        <button type="submit" class="btn btn-primary mx-2">Modifier</button>
     </div>
 </form>
+<script>
+    function addCard(cardType) {
+        <?php
+        // Dynamically include the card based on the button clicked
+        echo 'includeCard("' . $cardType . '");';
+        ?>
+    }
+</script>
+
+<?php
+function includeCard($cardType) {
+    if ($cardType === 'multi-choix') {
+        include('cards/multiChoix');
+    } elseif ($cardType === 'libre-question') {
+        include('cards/libreQuestion');
+    }
+}
+?>
+
+
+

@@ -12,9 +12,9 @@ class ExamensController extends Controller
         return view('examens.index');
     }
 
-    public function add()
+    public function add(Request $request)
     {
         return view('examens.add');
     }
-    
+
 }
