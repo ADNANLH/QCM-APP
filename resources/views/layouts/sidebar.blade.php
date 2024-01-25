@@ -2,7 +2,8 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ route('home') }}" class="brand-link text-center">
-        <img src="{{ asset('img/logo-solicode.png') }}" alt="Solicode Logo" class="brand-image img-circle elevation-3">
+        <img src="{{ asset('img/logo-solicode.png') }}" alt="Solicode Logo" class="brand-image">
+        {{-- img-circle elevation-3 --}}
         <span class="brand-text font-weight-light">{{ config('app.name') }}</span>
     </a>
 
@@ -18,7 +19,7 @@
                         <p>
                            Examens
                         </p>
-                        
+
                     </a>
                 </li>
 
