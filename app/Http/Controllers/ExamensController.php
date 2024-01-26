@@ -17,4 +17,6 @@ class ExamensController extends Controller
         return view('examens.add');
     }
 
+
+
 }

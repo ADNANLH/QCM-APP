@@ -17,7 +17,8 @@
                             <div class="card-header">
                                 <h3 class="card-title">Ajouter un examen</h3>
                             </div>
-                           @include('examens.form')
+                           @include('examens.forms.exam-form')
+                           
                         </div>
                     </div>
                 </div>
