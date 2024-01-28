@@ -4,7 +4,7 @@
     <a href="{{ route('examens.index') }}" class="brand-link text-center">
         <img src="{{ asset('img/logo-solicode.png') }}" alt="Solicode Logo" class="brand-image">
         {{-- img-circle elevation-3 --}}
-        <span class="brand-text font-weight-light">d</span>
+        <span class="brand-text font-weight-light">ADN</span>
     </a>
 
     <!-- Sidebar -->

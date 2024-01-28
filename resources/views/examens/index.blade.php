@@ -63,7 +63,7 @@
                                                 <a href="#" class='btn btn-default btn-sm' title='Afficher'>
                                                     <i class="far fa-eye"></i>
                                                 </a>
-                                                <a href="#" class='btn btn-default btn-sm' title='Modifier'>
+                                                <a href="{{ route('examens.edit') }}" class='btn btn-default btn-sm' title='Modifier'>
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </a>
                                                 <a href="#" class='btn btn-danger btn-sm ' title='Supprimer'>
@@ -174,7 +174,7 @@
                                 <li class="page-item"><a class="page-link" href="#">»</a></li>
                                 </ul>
                                 </div>
-                        
+
                         </div>
                     </div>
                 </div>

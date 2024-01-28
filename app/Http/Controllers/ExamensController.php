@@ -14,7 +14,20 @@ class ExamensController extends Controller
 
     public function add(Request $request)
     {
-        return view('examens.add');
+        $editMode = false;
+        return view('examens.add',compact('editMode'));
+    }
+    public function edit(Request $request)
+    {
+        $exam = [
+            'examen' => 'Static Exam Title',
+            'description' => 'Static Exam Description',
+            'date_debut' => '2024-01-01T00:00',
+            'date_fin' => '2024-01-02T00:00', 
+        ];
+        $editMode = true;
+
+        return view('examens.edit', compact('exam', 'editMode'));
     }
 
 
